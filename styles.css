@@ -420,6 +420,40 @@ footer .copyright { margin-top: 34px; padding-top: 22px; border-top: 1px solid r
 .legal a { color: var(--accent); }
 .legal .back { display: inline-block; margin-top: 40px; color: var(--accent); text-decoration: none; font-weight: 600; }
 
+/* ---------- Home hub (index) — service cards ---------- */
+.home-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 50px;
+}
+.service-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 460px;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #2a2622;
+  background-image: linear-gradient(rgba(0,0,0,0) 35%, rgba(15,14,12,0.85)), var(--card-img);
+  background-size: cover;
+  background-position: center;
+  transition: background-size 0.4s ease;
+}
+.service-card:hover, .service-card:focus-visible { background-size: 108%; outline: none; }
+.service-card:focus-visible { box-shadow: inset 0 0 0 3px var(--accent); }
+.service-card .sc-body { padding: 34px 34px 36px; width: 100%; }
+.service-card h3 { color: #fff; font-size: 30px; margin-bottom: 6px; }
+.service-card p { color: rgba(255,255,255,0.85); font-size: 16px; margin: 0 0 14px; max-width: 380px; }
+.service-card .sc-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-size: 15px; font-weight: 600; letter-spacing: 0.02em;
+  color: #fff;
+}
+.service-card .sc-link::after { content: "\2192"; color: var(--accent); transition: transform 0.2s ease; }
+.service-card:hover .sc-link::after { transform: translateX(4px); }
+
 /* =========================================================
    RESPONSIVE — mobile-first refinements at <=768px
    ========================================================= */
@@ -444,6 +478,10 @@ footer .copyright { margin-top: 34px; padding-top: 22px; border-top: 1px solid r
   .steps { grid-template-columns: 1fr; gap: 30px; }
   .proof-gallery { grid-template-columns: 1fr; }
   .gal-item { min-height: 340px; }
+
+  .home-services { grid-template-columns: 1fr; }
+  .service-card { min-height: 380px; }
+  .service-card h3 { font-size: 26px; }
 
   .final-cta h2 { font-size: 30px; }
 
