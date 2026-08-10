@@ -10,8 +10,8 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LVX Limited | Renovations, Extensions, Lofts & Kitchens in Prime London</title>
-  <meta name="description" content="LVX build renovations, extensions, loft conversions and kitchens for homeowners in Kensington, Fulham, Richmond and prime London. Choose your project to get a free quote." />
+  <title>Design &amp; Build in London &amp; Surrey | LVX Limited</title>
+  <meta name="description" content="LVX is a design &amp; build company for homeowners across London, Surrey &amp; surrounding areas — full refurbishments, extensions, loft conversions, kitchens, new builds and interior design. Fixed-price quotes, finished on schedule. Book a free quote." />
 
   <!-- TRACKING HEAD CODES GO HERE: Meta Pixel, GA4, GTM Head, TikTok, etc. -->
   <!-- [GTM HEAD] Google Tag Manager head snippet goes here -->
@@ -19,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <!-- Speed: warm up the form host + prioritise the hero image (LCP) -->
+  <link rel="preconnect" href="https://api.leadconnectorhq.com" />
+  <link rel="preconnect" href="https://link.msgsndr.com" />
+  <link rel="preload" as="image" href="images/extension-hero.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -29,14 +33,14 @@
   <!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
   <!-- [GTM BODY] Google Tag Manager (noscript) snippet goes here -->
 
-  <!-- ============ HERO ============ -->
-  <header class="hero" style="--hero-img: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');">
+  <!-- ============ 1. HERO ============ -->
+  <header class="hero" style="--hero-img: url('images/extension-hero.jpg');">
     <div class="hero__inner">
-      <span class="eyebrow">For homeowners in prime London</span>
-      <h1>Renovations Built The Right Way</h1>
-      <p class="hero__sub">LVX build renovations, extensions, loft conversions and kitchens for homeowners across prime London &mdash; including Kensington, Chelsea, Fulham and Richmond.</p>
-      <a href="#services" class="btn">Choose Your Project</a>
-      <p class="btn-note">Free quote. Takes less than 2 minutes. No obligation.</p>
+      <span class="eyebrow">Design &amp; build for homeowners in London &amp; Surrey</span>
+      <h1>Your Home, Transformed The Right Way</h1>
+      <p class="hero__sub">Full refurbishments, extensions, loft conversions, kitchens, new builds and interior design &mdash; designed and built by one team you can trust. Fixed-price quotes, finished on schedule, across London, Surrey &amp; surrounding areas.</p>
+      <a href="#form" class="btn" data-scroll="form">Get My Free Quote</a>
+      <p class="btn-note">Free &amp; no obligation &middot; Takes under 2 minutes &middot; We call you back within 24 hours</p>
       <div class="trust-strip">
         <span class="trust-item"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 5.0 by homeowners</span>
         <span class="trust-item">20+ years building in London</span>
@@ -45,7 +49,7 @@
     </div>
   </header>
 
-  <!-- ============ SOCIAL PROOF STRIP ============ -->
+  <!-- ============ 2. SOCIAL PROOF STRIP ============ -->
   <section class="proof-bar" aria-label="Company proof">
     <div class="container">
       <span class="pb-item"><span class="pb-num">20+</span><span class="pb-label">Years in business</span></span>
@@ -58,53 +62,265 @@
     </div>
   </section>
 
-  <!-- ============ SERVICE PICKER ============ -->
+  <!-- ============ FORM (primary, above the fold) ============ -->
+  <section id="form" class="form-section">
+    <div class="container">
+      <span class="eyebrow">Start here</span>
+      <h2>Tell Us About Your Project</h2>
+      <p class="section-lead">It takes under 2 minutes and there is no obligation. You can also call us on <a href="tel:+447426775068" class="phone-link">07426 775068</a>.</p>
+      <div class="form-wrap">
+        <!-- LeadConnector / GoHighLevel embedded qualification form -->
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/9PsV5ULBvPmhe3jYhyFx"
+          style="width:100%;height:100%;border:none;border-radius:8px"
+          id="inline-9PsV5ULBvPmhe3jYhyFx"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="LVX Landing Page Form"
+          data-height="undefined"
+          data-layout-iframe-id="inline-9PsV5ULBvPmhe3jYhyFx"
+          data-form-id="9PsV5ULBvPmhe3jYhyFx"
+          title="LVX Landing Page Form">
+        </iframe>
+        <!-- UTM NOTE: Set the form's redirect (in GoHighLevel) to thank-you.html.
+             To pass UTM/click IDs into the submission, either (a) map them from the
+             iframe URL inside GHL, or (b) switch to a native form and add hidden
+             inputs named utm_source, utm_medium, utm_campaign, utm_content,
+             utm_term, gclid, fbclid, ttclid, msclkid — script.js auto-fills them. -->
+        <noscript><p class="form-fallback">Please enable JavaScript to load the form, or call us on 07426 775068.</p></noscript>
+      </div>
+    </div>
+  </section>
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+
+  <!-- ============ SERVICES ============ -->
   <section id="services">
     <div class="container">
-      <span class="eyebrow">What can we help with</span>
-      <h2>Pick Your Project</h2>
-      <p class="section-lead">Choose the work you are planning and get a free, no-obligation quote.</p>
+      <span class="eyebrow">What we do</span>
+      <h2>One Team For Your Whole Home</h2>
+      <p class="section-lead">From a single room to a full refurbishment or a ground-up new build, LVX designs and builds it all &mdash; so you deal with one accountable team from first sketch to final finish.</p>
     </div>
     <div class="home-services">
-      <a class="service-card" href="renovations.html" style="--card-img: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80');">
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/renovation-drawing-room.jpg');">
         <div class="sc-body">
-          <h3>Full House Renovations</h3>
-          <p>A whole home renovated top to bottom, on time and on budget.</p>
+          <h3>Full Refurbishment</h3>
+          <p>Whole-home renovations, reconfigured and finished to a high standard, top to bottom.</p>
           <span class="sc-link">Get a free quote</span>
         </div>
       </a>
-      <a class="service-card" href="extensions.html" style="--card-img: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80');">
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/extension-hero.jpg');">
         <div class="sc-body">
-          <h3>Extensions</h3>
-          <p>Add space and light to your home without the stress of moving.</p>
+          <h3>House Extension</h3>
+          <p>Single, double-storey and wrap-around extensions that add space and light without moving.</p>
           <span class="sc-link">Get a free quote</span>
         </div>
       </a>
-      <a class="service-card" href="conversions.html" style="--card-img: url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80');">
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/kitchen-hero.jpg');">
         <div class="sc-body">
-          <h3>Loft Conversions</h3>
-          <p>Turn unused roof space into a room you will actually use.</p>
+          <h3>Kitchen Renovation</h3>
+          <p>Bespoke kitchens, from structural openings to the final tile, tap and finish.</p>
           <span class="sc-link">Get a free quote</span>
         </div>
       </a>
-      <a class="service-card" href="kitchens.html" style="--card-img: url('images/kitchen-hero.jpg');">
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/loft-bedroom-kensington.jpg');">
         <div class="sc-body">
-          <h3>Kitchen Refurbishment</h3>
-          <p>A new kitchen designed and fitted right, finished on schedule.</p>
+          <h3>Loft Conversion</h3>
+          <p>Unused roof space turned into bright bedrooms, offices and en-suites.</p>
           <span class="sc-link">Get a free quote</span>
         </div>
       </a>
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/extension-side-return.jpg');">
+        <div class="sc-body">
+          <h3>New Build</h3>
+          <p>Ground-up homes and garden rooms, delivered to architectural drawings with meticulous detailing.</p>
+          <span class="sc-link">Get a free quote</span>
+        </div>
+      </a>
+      <a class="service-card" href="#form" data-scroll="form" style="--card-img: url('images/bathroom.jpg');">
+        <div class="sc-body">
+          <h3>Interior Design</h3>
+          <p>Considered interiors that make every space feel calm, warm and complete.</p>
+          <span class="sc-link">Get a free quote</span>
+        </div>
+      </a>
+    </div>
+    <div class="container" style="text-align:center; margin-top:44px;">
+      <a href="#form" class="btn" data-scroll="form">Get My Free Quote</a>
     </div>
   </section>
 
-  <!-- ============ CTA BAND ============ -->
-  <section class="final-cta" style="--cta-img: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80');">
+  <!-- ============ PROBLEM ============ -->
+  <section class="section-cream">
     <div class="container">
-      <span class="eyebrow">Not sure where to start</span>
-      <h2>Talk To A Team You Can Trust</h2>
-      <p>Prefer to speak to someone first? Call us and we will point you in the right direction.</p>
-      <a href="tel:+447426775068" class="btn">Call 07426 775068</a>
-      <p class="btn-note">20+ years building in prime London. No pressure, no hard sell.</p>
+      <span class="eyebrow">Why projects go wrong</span>
+      <h2>Renovating Should Not Feel Like A Gamble</h2>
+      <p class="section-lead">Most home-project worries come down to trust, time, and money.</p>
+      <div class="pain-grid">
+        <div class="pain-block">
+          <h3>Builders who go quiet</h3>
+          <p>They quote, start the job, then stop answering your calls.</p>
+        </div>
+        <div class="pain-block">
+          <h3>Timelines that keep slipping</h3>
+          <p>Weeks turn into months and no one tells you why.</p>
+        </div>
+        <div class="pain-block">
+          <h3>Costs you did not expect</h3>
+          <p>The final bill looks nothing like the first quote.</p>
+        </div>
+        <div class="pain-block">
+          <h3>No say in your own home</h3>
+          <p>You feel left out of decisions made about your space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MECHANISM (image-led) ============ -->
+  <section class="mechanism">
+    <div class="container mech-intro">
+      <span class="eyebrow">How LVX is different</span>
+      <h2>Built Right, Explained Clearly</h2>
+      <p class="section-lead">You get one team, one plan, and one point of contact from start to finish.</p>
+    </div>
+    <div class="mech-feature" style="background-image: linear-gradient(rgba(0,0,0,0.05), rgba(15,14,12,0.75)), url('images/extension-living-room.jpg');">
+      <div class="mech-cards">
+        <div class="mech-card"><span class="num">01</span><h3>One point of contact</h3><p>You always know who to call and you get a straight answer.</p></div>
+        <div class="mech-card"><span class="num">02</span><h3>Fixed, honest quotes</h3><p>You see the full cost up front, with no surprises later.</p></div>
+        <div class="mech-card"><span class="num">03</span><h3>Clear weekly updates</h3><p>You know what is happening in your home every week.</p></div>
+        <div class="mech-card"><span class="num">04</span><h3>Design &amp; planning handled</h3><p>We guide the drawings and approvals so you do not have to.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUARANTEE / RISK REVERSAL ============ -->
+  <section class="guarantee">
+    <div class="container">
+      <span class="eyebrow">Our promise to you</span>
+      <h2>The Risk Is On Us, Not You</h2>
+      <p class="section-lead">Choosing a builder is a leap of faith. These are the commitments we make on every project we take on.</p>
+      <div class="guarantee-grid">
+        <div class="guarantee-item">
+          <span class="guarantee-check" aria-hidden="true">&#10003;</span>
+          <div>
+            <h3>Fixed price, in writing</h3>
+            <p>Your quote is agreed before we start. The price you approve is the price you pay &mdash; no surprises.</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <span class="guarantee-check" aria-hidden="true">&#10003;</span>
+          <div>
+            <h3>Finished on schedule</h3>
+            <p>We agree a completion date up front and give you a written programme to hold us to.</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <span class="guarantee-check" aria-hidden="true">&#10003;</span>
+          <div>
+            <h3>Accredited &amp; guaranteed</h3>
+            <p>FMB, TrustMark and Which? Trusted Trader accredited, with our workmanship guaranteed.</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <span class="guarantee-check" aria-hidden="true">&#10003;</span>
+          <div>
+            <h3>No-obligation quote</h3>
+            <p>The consultation and quote are free. No pressure and no hard sell &mdash; you decide in your own time.</p>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:40px;"><a href="#form" class="btn" data-scroll="form">Get My Free Quote</a></p>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section-dark">
+    <div class="container">
+      <span class="eyebrow">Simple from the start</span>
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Tell us about your project</h3><p>Fill in the short form. It takes under 2 minutes.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Book your free call</h3><p>Have a friendly, no-pressure chat with our team.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Get a clear plan</h3><p>Receive an honest timeline and an accurate quote.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT YOU GET FROM THE CALL ============ -->
+  <section class="section-cream">
+    <div class="container">
+      <span class="eyebrow">What you get from the call</span>
+      <h2>A Clear Picture, No Pressure</h2>
+      <ul class="get-list">
+        <li>A clear idea of what your project would involve and how long it would take.</li>
+        <li>An honest view on your budget and whether it is realistic.</li>
+        <li>Answers to any questions before you commit to anything.</li>
+        <li>A straightforward conversation with no hard sell.</li>
+        <li>Honest feedback on whether we are the right fit for you.</li>
+      </ul>
+      <p style="margin-top:36px;"><a href="#form" class="btn" data-scroll="form">Get My Free Quote</a></p>
+    </div>
+  </section>
+
+  <!-- ============ PROOF GALLERY ============ -->
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Recent work</span>
+      <h2>Recent Projects Across London &amp; Surrey</h2>
+      <p class="section-lead">Real projects, delivered on time for homeowners across London &amp; Surrey.</p>
+    </div>
+    <div class="proof-gallery">
+      <div class="gal-item" style="--gal-img: url('images/kitchen-fulham.jpg');">
+        <div class="gal-cap"><span class="tag">Kitchen renovation &middot; Fulham</span><p>Bespoke kitchen with marble island, opening to the garden.</p></div>
+      </div>
+      <div class="gal-item" style="--gal-img: url('images/loft-bedroom-fulham.jpg');">
+        <div class="gal-cap"><span class="tag">Loft conversion &middot; Fulham</span><p>Bright loft bedroom with en-suite, delivered in 11 weeks.</p></div>
+      </div>
+      <div class="gal-item testimonial" style="--gal-img: url('images/kitchen-testimonial.jpg');">
+        <div class="gal-cap"><blockquote>&ldquo;The whole project came in on budget and the finish is superb.&rdquo;<cite>James P. &mdash; Richmond refurbishment</cite></blockquote></div>
+      </div>
+      <div class="gal-item" style="--gal-img: url('images/extension-kensington.jpg');">
+        <div class="gal-cap"><span class="tag">Kitchen extension &middot; Kensington</span><p>Marble island and roof lantern opening to the garden.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BACK TO FORM ============ -->
+  <section class="back-to-form">
+    <div class="container">
+      <a href="#form" class="btn" data-scroll="form">Back To Your Free Quote &#8593;</a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section-cream">
+    <div class="container">
+      <span class="eyebrow">Common questions</span>
+      <h2>Good To Know</h2>
+      <div class="faq">
+        <div class="faq-item"><button class="faq-q" type="button">What happens after I fill in the form?</button><div class="faq-a"><p>One of our team calls you for a short, friendly chat about your project. There is no pressure and no obligation.</p></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">We are still planning. Is it too early to reach out?</button><div class="faq-a"><p>No. Early is the best time to talk. We can help you shape the plan and set a realistic budget before you commit.</p></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">What kinds of projects do you take on?</button><div class="faq-a"><p>Full refurbishments, extensions, loft conversions, kitchens, new builds and interior design &mdash; whether it is a single room or your whole home, we design and build it end to end.</p></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">What if our budget does not match what we need?</button><div class="faq-a"><p>We will tell you honestly. You will get a clear view of what is possible for your money, with no wasted time.</p></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">What areas do you cover?</button><div class="faq-a"><p>We cover London, Surrey and the surrounding areas, including Berkshire and Sussex &mdash; from Kensington, Chelsea, Fulham and Richmond to Kingston, Esher, Weybridge, Cobham, Guildford, Windsor and Ascot. Not sure if you are in our area? Just ask and we will let you know.</p></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">Do you handle both design and installation?</button><div class="faq-a"><p>Yes. We manage the full process including design, supply, installation and finishing. This ensures everything fits correctly, matches your requirements and is completed to a high standard without you needing to coordinate multiple trades.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" style="--cta-img: url('images/renovation-drawing-room.jpg');">
+    <div class="container">
+      <span class="eyebrow">Your dream home is waiting</span>
+      <h2>Designed &amp; Built To Last</h2>
+      <p>Get an honest plan and a clear quote for your project. Then decide in your own time.</p>
+      <a href="#form" class="btn" data-scroll="form">Get My Free Quote</a>
+      <p class="btn-note">Free &amp; no obligation &middot; We call you back within 24 hours</p>
     </div>
   </section>
 
@@ -114,7 +330,7 @@
       <div class="foot-top">
         <div>
           <div class="brand">LVX</div>
-          <p class="foot-desc">Renovations, extensions, loft conversions and new builds for homeowners in prime London.</p>
+          <p class="foot-desc">Full refurbishments, extensions, loft conversions, kitchens, new builds and interior design for homeowners across London, Surrey &amp; surrounding areas.</p>
         </div>
         <nav class="foot-links" aria-label="Legal">
           <a href="privacy.html">Privacy Policy</a>
@@ -124,6 +340,12 @@
       <div class="copyright">&copy; 2026 LVX Limited. All rights reserved.</div>
     </div>
   </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="tel:+447426775068" class="call-btn" aria-label="Call LVX">Call</a>
+    <a href="#form" class="btn" data-scroll="form">Get My Free Quote</a>
+  </div>
 
   <script src="script.js" defer></script>
 </body>
