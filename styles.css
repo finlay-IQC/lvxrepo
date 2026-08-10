@@ -511,3 +511,38 @@ footer .copyright { margin-top: 34px; padding-top: 22px; border-top: 1px solid r
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ============ Guarantee / risk-reversal band ============ */
+.guarantee { background: var(--white); }
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 40px;
+  margin-top: 42px;
+}
+.guarantee-item { display: flex; gap: 18px; align-items: flex-start; }
+.guarantee-check {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(176, 141, 87, 0.14);
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+.guarantee-item h3 {
+  font-family: var(--font-head);
+  font-size: 22px;
+  margin: 2px 0 6px;
+  color: var(--ink);
+}
+.guarantee-item p { margin: 0; color: var(--muted); }
+
+@media (max-width: 700px) {
+  .guarantee-grid { grid-template-columns: 1fr; gap: 24px; }
+}
